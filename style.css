@@ -1,0 +1,42 @@
+* {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.foreground {
+    top: 0; left: 0;
+    width: 100vw; 
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center; /* horizontal centering */
+    align-items: center;     /* vertical centering */
+  
+    z-index: 60;
+
+    background-color: rgba(0, 0, 0, 0.551);
+}
+
+.foreground img {
+    z-index: 61;
+    width: 50%;
+}
+
+.background {
+    z-index: 40;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(34, 34, 34);
+}
+
+.video_div {
+    z-index: 50;
+}
+
+video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: contain;
+}
