@@ -13,7 +13,7 @@ if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
         
         document.getElementById('movideo').play();
         document.getElementById('movideo').muted = false;
-        document.getElementById('movideo').volume = 0.5;
+        document.getElementById('movideo').volume = 0.1;
       `);
 
 } else {
@@ -24,7 +24,7 @@ if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
         setTimeout(() => { foreground.remove(); }, 1000);
         var x = document.getElementById('movideo');
         document.getElementById('movideo').muted = false;
-        document.getElementById('movideo').volume = 0.5;
+        document.getElementById('movideo').volume = 0.1;
         x.play();
     });
 }
